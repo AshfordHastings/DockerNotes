@@ -77,3 +77,28 @@ Objective Achieved: Development and Deployment of Workflow Endpoints Essential f
 	In implementing these endpoints, I took further ownership of the Orchard orchestration component, by expanding Orchard's capabilities and design.
 	The endpoints were conceptualized and implemented with a future-aligned approach, setting the foundation for an eventual transition to an OpenAPI compliant framework.
 Initiated the development of features that would permit users to possess and alter configurations of their own workflows, a crucial step in furthering the design of a user-friendly workflow and workflow configuration editor in the UI, something very valuable for serving ARIEL users. ![image](https://github.com/AshfordHastings/DockerNotes/assets/33183721/f6b1b4d0-128b-4150-9580-12c8b72088f3)
+
+
+	
+Objective Achieved: Development of Classification Service in TXT_AFR
+Accomplishments:
+	1. Integration of Azure Document Intelligence Classification Capabilities
+		a. Successfully enabled the TXT_AFR service to harness Azure Document Intelligence for advanced document classification in the development environment, utilizing custom trained classification models to be applied in the execution of an ARIEL workflow. 
+		b. The introduction of document classification addresses a critical need for our current and potential clients, allowing for classification to be either used in selecting the most accurate extraction AFR model or for allowing configurability of later steps in a workflow dependent on document type.
+	2. Preparation of Implementation for EZOps Project
+		a. Prepared for application of classification capability to EZOps project scope expansion to other brokers by allowing for classification of incoming emails and their respective attachments to be performed using intelligent classification rather than a less flexible rule based approach. 
+	3. Migration to Event-Cloud 2.0
+		a. Led the design of the service using Event Cloud 2.0, marking the first TXT service to utilize this updated package and command / event schema. 
+		b. Acquired knowledge of Event Cloud 2.0, designed the service's event messaging interface in such a way that current services may be easily migrated and new services may be rapidly build, tested, and deployed. This approach allows for the team to focus on core service functionality rather than infrastructure. 
+		c. Event Cloud 2.0's adoption by services, as well as TXT_IDC's temporary and variable adoption of Event Cloud 2.0, enhances compatibility between services and orchestration through the common use of Arca compliant schemas. Importantly, the adoption is the first step to orchestration publishing directly to message brokers to be consumed by services, removing the need for unnecessary HTTP calls to TXT_IDC for individual job execution. 
+
+Objective Achieved: Enablement for TXT_NER Service 
+Accomplishments:
+	1. Enhanced Team Capability and Independence
+		a. Conducted several guided sessions and provided individual guidance on RTC build pipelines and Azure DevOps deployment pipelines, increasing team members' understanding and proficiency. Knowledge shared includes writing appropriate ServiceNow tickets, connecting deployment pipelines and services with Azure Key Vault for secret retrieval, identifying and mitigating issues in Kubernetes deployments, and creating build definitions. 
+		b. Specifically enabled a team member to independently deploy the TXT_NER service up to the UAT environment. The mentorship and guidance is be able to complete this work independently is crucial for creating a culture of knowledge sharing and transparency on deployment processes. 
+	2. Implemented Testing and Event Broker Interfacing Strategies
+		a. Altered service design for message broker interfacing in such an approach that allows for easily replication in other services and comprehensive testing at different levels of environmental dependency, ensuring that development can happen quickly and services can perform robustly once deployed. 
+	3. AML Document Processing
+		a. TXT_NER's utilization of Named Entity Recognition (NER) enhances ARIEL's capability to extract entities from AML documents, a significant accomplishment in meeting the needs of the ISS team.
+The integration of TXT_NER with TXT_AFR and TXT_ASI services strengthens our approach to providing comprehensive, configurable solutions where client data can be processed with a suite of various methods.
